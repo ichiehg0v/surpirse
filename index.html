@@ -3,33 +3,53 @@
     <head>
       <style>
         /* 這裡可以設定網頁的樣式 */
+        body {
+          background-color: pink; /* 設定網頁背景顏色為粉紅色 */
+        }
+    
         .photo {
           width: 300px;
           height: 300px;
           margin: 10px;
+          border-radius: 50%; /* 設定照片圓角為50% */
         }
     
         #message {
           display: none;
           font-size: 36px;
-          color: rgb(43, 9, 59);
+          color: red;
           text-align: center;
+          font-family: "Comic Sans MS", cursive, sans-serif; /* 設定文字字體為 Comic Sans MS */
+        }
+    
+        p {
+          color: white; /* 設定文字顏色為白色 */
+          font-size: 24px; /* 設定文字大小為24像素 */
+          text-align: center; /* 設定文字置中對齊 */
+          font-weight: bold; /* 設定文字加粗 */
         }
       </style>
     </head>
     <body>
+      <p>請點擊下面的照片，看看有什麼驚喜！</p>
+    
       <div id="photos">
         <!-- 這裡可以放入十張照片的網址 -->
-        <img class="photo" src="photo/454564678_Le_Petit_Prince_eat_mcdonald_s.png">
-        <img class="photo" src="photo/501115742_beautiful_print_of_the_interior_of_an_art_museum_with_vibrant_framed_paintings_covering_the_walls__p.png">
-        <img class="photo" src="photo/519583272_artist_work_shop_by_using_laptop.png">
-        <img class="photo" src="photo/593279298_oil_painting_event_in_Coco_2017___everyone_using_laptop__.png">
-        <img class="photo" src="photo/622521900_red_meat_sauce_pasta_in_the_antique_tableware__near_vintage_fork_vintage_spoon__super_detailed_.png">
-        <img class="photo" src="photo/633012763_beautiful_face__high_detailed.png">
-        <img class="photo" src="photo/633012763_fashion_super_model_watching_sunset_in_Santorini_alley__professional_photo__highly_detailed__facial_.png">
+        <img class="photo" src="photo/1.jpg">
+        <img class="photo" src="photo/2.jpg">
+        <img class="photo" src="photo/3.jpg">
+        <img class="photo" src="photo/4.jpg">
+        <img class="photo" src="photo/5.jpg">
+        <img class="photo" src="photo/6.jpg">
+        <img class="photo" src="photo/7.jpg">
+        <img class="photo" src="photo/8.jpg">
+        <img class="photo" src="photo/9.jpg">
+        <img class="photo" src="photo/10.jpg">
+        <img class="photo" src="photo/11.jpg">
+        <img class="photo" src="photo/12.jpg">
       </div>
     
-      <div id="message">要不要跟我結婚呀</div>
+      <div id="message">Happy BirthDayyyyyyyy</div>
     
       <!-- 引入 jQuery 函式庫 -->
       <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
@@ -54,9 +74,7 @@
              }
            });
          });
-        
-      
-      
+ 
        </script>
     </body>
     </html>
