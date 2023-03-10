@@ -1,0 +1,62 @@
+
+<html>
+    <head>
+      <style>
+        /* 這裡可以設定網頁的樣式 */
+        .photo {
+          width: 300px;
+          height: 300px;
+          margin: 10px;
+        }
+    
+        #message {
+          display: none;
+          font-size: 36px;
+          color: red;
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="photos">
+        <!-- 這裡可以放入十張照片的網址 -->
+        <img class="photo" src="/photo/454564678_Le_Petit_Prince_eat_mcdonald_s.png">
+        <img class="photo" src="/photo/501115742_beautiful_print_of_the_interior_of_an_art_museum_with_vibrant_framed_paintings_covering_the_walls__p.png">
+        <img class="photo" src="/photo/519583272_artist_work_shop_by_using_laptop.png">
+        <img class="photo" src="/photo/593279298_oil_painting_event_in_Coco_2017___everyone_using_laptop__.png">
+        <img class="photo" src="/photo/622521900_red_meat_sauce_pasta_in_the_antique_tableware__near_vintage_fork_vintage_spoon__super_detailed_.png">
+        <img class="photo" src="/photo/633012763_beautiful_face__high_detailed.png">
+        <img class="photo" src="/photo/633012763_fashion_super_model_watching_sunset_in_Santorini_alley__professional_photo__highly_detailed__facial_.png">
+      </div>
+    
+      <div id="message">你願意跟我結婚嗎？</div>
+    
+      <!-- 引入 jQuery 函式庫 -->
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+      <!-- 寫一些 JavaScript 程式碼來控制網頁行為 -->
+      <script>
+        
+         // 當文件載入完成後執行以下函數
+         $(document).ready(function() {
+    
+           // 當點擊任何一張照片時執行以下函數
+           $(".photo").click(function() {
+    
+             // 將被點擊的照片隱藏起來
+             $(this).hide();
+    
+             // 如果所有的照片都隱藏了
+             if ($(".photo").length == $(".photo:hidden").length) {
+    
+               // 將訊息顯示出來
+               $("#message").show();
+             }
+           });
+         });
+        
+      
+      
+       </script>
+    </body>
+    </html>
